@@ -1,0 +1,12 @@
+{
+  "name": "vulnfrog-scan-fixture",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Deliberately vulnerable fixture used to exercise Vulnfrog's scanners. Not a real application.",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "4.17.20",
+    "minimist": "1.2.5",
+    "js-yaml": "3.13.1"
+  }
+}
