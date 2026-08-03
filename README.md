@@ -12,3 +12,5 @@ This repository doubles as a test target for [Vulnfrog](https://vulnfrog.com).
 
 None of it is imported, executed, or shipped. Don't copy any of it into real
 code, and don't treat open findings on this repository as a live risk.
+
+Diagnostic PR for reproducing out-of-diff Vulnfrog review comments; do not merge.
