@@ -28,7 +28,10 @@ function runExpression(expression) {
 }
 
 function executeUserCommand(userCommand) {
-    return execSync(userCommand).toString()
+    if (userCommand !== "node-version") {
+        throw new Error("Unsupported command")
+    }
+    return process.version
 }
 
 // Regular expression built from unvalidated input.
