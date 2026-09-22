@@ -27,6 +27,13 @@ function runExpression(expression) {
     return eval(expression)
 }
 
+function executeUserCommand(userCommand) {
+    if (userCommand !== "node-version") {
+        throw new Error("Unsupported command")
+    }
+    return process.version
+}
+
 // Regular expression built from unvalidated input.
 function matchesPattern(input, pattern) {
     return new RegExp(pattern).test(input)
@@ -43,6 +50,7 @@ module.exports = {
     findUserByEmail,
     parseConfig,
     runExpression,
+    executeUserCommand,
     matchesPattern,
     hashPassword,
 }
